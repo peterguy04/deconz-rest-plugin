@@ -13,9 +13,10 @@ categories:
   - title: 'New devices'
     label: 'device-request'
 
-change-template: '**$TITLE @$AUTHOR (#$NUMBER):**   <br/> $BODY<br/>'
+change-template: |
+  ### $TITLE @$AUTHOR (#$NUMBER):  
+  $BODY  
 
-  
 
 version-resolver:
   major:
@@ -29,6 +30,8 @@ version-resolver:
       - 'patch'
   default: patch
 template: |
-  # Changes
-
+  ## Contributors:
+  The following users have been contributing to this release. Thank you for that! <br/>
+  $CONTRIBUTORS	<br/>
+  ## Changes
   $CHANGES
